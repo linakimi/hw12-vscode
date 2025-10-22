@@ -17,7 +17,8 @@ body{
 }
 
 .item {
-  height: 30px;
+  /* height: 30px; */
+  min-height: 30px;
   width: 30px;
   border: 1px solid #e8e4e6;
   background-color: #abd1c6;
@@ -31,39 +32,49 @@ body{
 }
 
 .flex{
-  
+  display: flex;
+  height: 100px;
 }
 
 .infl {
-  
+  display: inline-flex;
 }
 
 .start {
-
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .end {
-
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .center {
-
+  justify-content: center;
+  align-items: cetner;
 }
 
 .around {
-
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .between {
-
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .side {
-
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 80px;
 }
 
 .middle {
-
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 40px;
 }
 
 
