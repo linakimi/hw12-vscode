@@ -29,11 +29,12 @@ body{
   margin: 10px 0;
   background: #e8e4e6;
   height: 150px;
+  flex-wrap: wrap;
 }
 
 .flex{
   display: flex;
-  height: 100px;
+  /* height: 100px; */
 }
 
 .infl {
@@ -43,38 +44,45 @@ body{
 .start {
   justify-content: flex-start;
   align-items: flex-start;
+  align-content: flex-start;
 }
 
 .end {
   justify-content: flex-end;
   align-items: flex-end;
+  align-content: flex-end;
 }
 
 .center {
   justify-content: center;
-  align-items: cetner;
+  align-items: center;
+  align-content: center;
 }
 
 .around {
   justify-content: space-around;
   align-items: baseline;
+  align-content: space-around;
 }
 
 .between {
   justify-content: space-between;
   align-items: stretch;
+  align-content: space-between;
 }
 
 .side {
-  flex-grow: 1;
+  /* flex-grow: 1;
   flex-shrink: 2;
-  flex-basis: 80px;
+  flex-basis: 80px; */
+  flex: 2, 1, 80px;
 }
 
 .middle {
-  flex-grow: 2;
+  /* flex-grow: 2;
   flex-shrink: 1;
-  flex-basis: 40px;
+  flex-basis: 40px; */
+  flexx: 2, 1, 40px;
 }
 
 
